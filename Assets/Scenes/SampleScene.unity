@@ -200,7 +200,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.09213702, g: 0.4566037, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -319,7 +319,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1136734906}
   - component: {fileID: 1136734905}
   - component: {fileID: 1136734910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136734904}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -759,6 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  playerInput: {fileID: 0}
 --- !u!1 &1389947177
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,10 +932,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1287091238924377872, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1929966120355487886, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1136734909}
+    - target: {fileID: 2716380764025538113, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5448629756186752770, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.33
@@ -974,6 +983,10 @@ PrefabInstance:
     - target: {fileID: 5448629756186752770, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478525299019687414, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1038,10 +1051,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat
       objectReference: {fileID: 0}
+    - target: {fileID: 1287091238924377872, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1929966120355487886, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1136734909}
+    - target: {fileID: 2716380764025538113, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5448629756186752770, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.65
@@ -1082,7 +1103,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8478525299019687414, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8478525299019687414, guid: 0376bd97c4472d545ade515f6cc3fcf1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1098,5 +1124,5 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1136734909}
   - {fileID: 8125710014737294287}
-  - {fileID: 1389947179}
   - {fileID: 1923095495}
+  - {fileID: 1389947179}

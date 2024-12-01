@@ -17,6 +17,9 @@ GameObject:
   - component: {fileID: 2716380764025538113}
   - component: {fileID: 6923487026104462891}
   - component: {fileID: 8478525299019687414}
+  - component: {fileID: 8856533526044068922}
+  - component: {fileID: 4950574484499156224}
+  - component: {fileID: 502942484157900808}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -277,3 +280,41 @@ CapsuleCollider2D:
   m_Offset: {x: 0.099528365, y: -0.13933995}
   m_Size: {x: 1.0473564, y: 0.70660347}
   m_Direction: 1
+--- !u!114 &8856533526044068922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287091238924377872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047b13de5fe4ebe46945f59a25fd695f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &4950574484499156224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287091238924377872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc38f5d5127a584eb561531f4dcd8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+--- !u!114 &502942484157900808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287091238924377872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7f25aaefb37764199db92b6f613782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
