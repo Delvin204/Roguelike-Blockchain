@@ -33,6 +33,10 @@ public class PlayerController : MonoBehaviour
         playerControls.Combat.Dash.performed += _ => Dash();
     }
 
+    private void OnDisable() {
+        playerControls.Disable();
+    }
+
     private void OnEnable() {
         playerControls.Enable();
     }

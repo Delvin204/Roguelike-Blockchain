@@ -7,7 +7,7 @@ public class PickUpSpawner : MonoBehaviour
     [SerializeField] private GameObject goldCoin, healthGlobe;
 
     public void DropItems() {
-        int randomNum = 1;
+        int randomNum = Random.Range(1,3);
 
         if (randomNum == 1)
         {

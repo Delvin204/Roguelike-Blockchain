@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveWeapon : MonoBehaviour
+public class ActiveWeapon : Singleton<ActiveWeapon>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerControls playerControls;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    protected override void Awake() {
+        base.Awake();
+
+        playerControls = new PlayerControls();
     }
 }
