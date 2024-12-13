@@ -21,6 +21,8 @@ public class Pickup : MonoBehaviour
     }
 
     private void Update() {
+        if (PlayerController.Instance == null) return;
+
         Vector3 playerPos = PlayerController.Instance?.transform.position ?? Vector3.zero;
 
         if (Vector3.Distance(transform.position, playerPos) < pickUpDistance) {
@@ -33,7 +35,7 @@ public class Pickup : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rb.linearVelocity = moveDir * moveSpeed * Time.deltaTime; // Chỉnh lại từ linearVelocity sang velocity
+        rb.linearVelocity = moveDir * moveSpeed * Time.deltaTime;
     }
 
     private void OnTriggerStay2D(Collider2D other) {

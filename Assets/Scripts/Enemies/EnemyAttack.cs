@@ -12,6 +12,11 @@ public class EnemyAttack : MonoBehaviour
 
     private void Update()
     {
+        if (player == null)
+        {
+            // Player bị null, không thực hiện tấn công
+            return;
+        }
         // Kiểm tra khoảng cách giữa enemy và player
         if (Vector2.Distance(transform.position, player.position) <= attackRange && canAttack)
         {
