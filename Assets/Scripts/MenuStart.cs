@@ -1,19 +1,24 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class MenuStart : MonoBehaviour
 {
-    
-    public void StartGame() {
+    [SerializeField] GameObject WalletMenu;
+
+    public void StartGame()
+    {
         SceneManager.LoadScene("Gameplay");
     }
 
-    public void Home() {
-        
+    public void LinkWallet()
+    {
+        WalletMenu.SetActive(true);
     }
 
-    public void Resume() {
-
+    public void Exit()
+    {
+        Application.Quit();
     }
-
 }
